@@ -7,20 +7,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../image/ovo_logo.png" type="image/x-icon">
 </head>
 <body>
+    <!-- header -->
     <header>
-        <!-- header -->
         <nav>
+            <!-- menu desktop normal -->
             <ul>
+                <li><a href="../index.html">Acceuil</a></li>
                 <li><a href="./portfolio.html">Portfolio</a></li>
                 <li><a href="./expertise.html">Expertise</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
+            <!-- menu hamburger -->
+            <div class="con">
+                <input type="checkbox" id="check" data-valeur="change">
+                <label for="check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
         </nav>
-        <img src="../image/ovo_logo.png" alt="ovo_logo">
+
+        <figure>
+            <a href="../index.html"><img src="../image/ovo_logo.png" alt="ovo_logo"></a>
+        </figure>
         <div id="btnHead">
-            <button><a href="#">Connexion</a></button>
-            <button><a href="#">S'inscrire</a></button>
+            <button><a href="./connexion.html">Connexion</a></button>
+            <button><a href="./inscription.html">S'inscrire</a></button>
         </div>
     </header>
     <!-- section gallery -->

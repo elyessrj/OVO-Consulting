@@ -6,25 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../image/ovo_logo.png" type="image/x-icon">
     <title>Expertise</title>
 </head>
 <body>
     <!-- header -->
     <header>
         <nav>
+            <!-- menu desktop normal -->
             <ul>
+                <li><a href="../index.html">Acceuil</a></li>
                 <li><a href="./portfolio.html">Portfolio</a></li>
                 <li><a href="./expertise.html">Expertise</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
+            <!-- menu hamburger -->
+            <div class="con">
+                <input type="checkbox" id="check" data-valeur="change">
+                <label for="check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
         </nav>
-        <img src="../image/ovo_logo.png" alt="ovo_logo">
+
+        <figure>
+            <a href="../index.html"><img src="../image/ovo_logo.png" alt="ovo_logo"></a>
+        </figure>
         <div id="btnHead">
-            <button><a href="#">Connexion</a></button>
-            <button><a href="#">S'inscrire</a></button>
+            <button><a href="./connexion.html">Connexion</a></button>
+            <button><a href="./inscription.html">S'inscrire</a></button>
         </div>
     </header>
     <!-- section card expertise-->
-    <section id="expertCards">
+    <section id="sect_expertCards">
         <div class="expertCard">
             <div class="expertCard_img">
                 <img src="../image/Star.png" alt="etoile symbole de la creation">
@@ -76,11 +93,11 @@
     </section>
 
     <!-- section fonctionnement -->
-    <section id="fonct">
-        <div class="boxRight">
+    <section id="sect_fonct">
+        <div class="boxImage">
             <img src="../image/Man-04.png" alt="mascotte au telephone">
         </div>
-        <div class="boxLeft">
+        <div class="boxText">
             <h5>Notre Fonctionnement</h5>
             <h2>Le processus créatif</h2>
             <p>

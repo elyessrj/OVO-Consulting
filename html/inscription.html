@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../image/ovo_logo.png" type="image/x-icon">
+</head>
+<body>
+   <!-- header -->
+   <header>
+        <nav>
+            <!-- menu desktop normal -->
+            <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./expertise.html">Expertise</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <!-- menu hamburger -->
+            <div class="con">
+                <input type="checkbox" id="check" data-valeur="change">
+                <label for="check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </nav>
+
+        <figure>
+            <a href="../index.html"><img src="../image/ovo_logo.png" alt="ovo_logo"></a>
+        </figure>
+        <div id="btnHead">
+            <button><a href="./connexion.html">Connexion</a></button>
+            <button><a href="./inscription.html">S'inscrire</a></button>
+        </div>
+    </header>
+    <!-- s'inscrire -->
+    
+    <section id="formInscrip">
+        <h2>Inscription</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>S'inscrire chez ovo</legend>
+                <label for="fname">Prénom</label>
+                <input type="text" id="fname" name="firstname" placeholder="Votre prénom" required>
+
+                <label for="lname">Prénom</label>
+                <input type="text" id="lname" name="lastname" placeholder="Votre nom" required>
+            
+                <label for="mail"></label>
+                <input type="email" name="email" id="mail" placeholder="Votre mail" required>
+            
+                <label for="tel">Tel</label>
+                <input type="tel" name="telephone" id="tel" placeholder="06 95..." required>
+
+                <label for="pass">Mot de passe</label>
+                <input type="password" name="pass" id="pass" required>
+            
+                <button type="submit">S'inscrire</button>
+            </fieldset>
+        </form>
+        <hr>
+        <form action="#" method="post">
+            <h2>Connexion</h2>
+            <fieldset>
+                <legend>Votre espace client</legend>
+                <label>Nom d'utilisateur</label>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+            
+                <label>Mot de passe</label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+            
+                <button type="submit">Connexion</button>
+            </fieldset>
+        </form>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footList">
+            <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="copyr">
+            <p>&copy  2023. All rights reserved.</p>
+        </div>
+        <div class="rSoc">
+            <ul>
+                <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

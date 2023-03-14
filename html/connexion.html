@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <!-- menu desktop normal -->
+            <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./expertise.html">Expertise</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <!-- menu hamburger -->
+            <div class="con">
+                <input type="checkbox" id="check" data-valeur="change">
+                <label for="check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </nav>
+
+        <figure>
+            <a href="../index.html"><img src="../image/ovo_logo.png" alt="ovo_logo"></a>
+        </figure>
+        <div id="btnHead">
+            <button><a href="./connexion.html">Connexion</a></button>
+            <button><a href="./inscription.html">S'inscrire</a></button>
+        </div>
+    </header>
+
+    <!--  -->
+    <form action="#" method="post">
+        <h2>Connexion</h2>
+        <fieldset>
+            <legend>Votre espace client</legend>
+            <label>Nom d'utilisateur</label>
+            <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+        
+            <label>Mot de passe</label>
+            <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+        
+            <button type="submit">Connexion</button>
+        </fieldset>
+    </form>
+</body>
+</html>
