@@ -15,6 +15,16 @@
 <body>
     <!-- header -->
     <header>
+        <!-- menu hamburger -->
+        <div class="con">
+            <input type="checkbox" id="check" data-valeur="change">
+            <label for="check">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
         <nav>
             <!-- menu desktop normal -->
             <ul>
@@ -23,16 +33,6 @@
                 <li><a href="./expertise.html">Expertise</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-            <!-- menu hamburger -->
-            <div class="con">
-                <input type="checkbox" id="check" data-valeur="change">
-                <label for="check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
         </nav>
 
         <figure>
@@ -44,7 +44,7 @@
         </div>
     </header>
     <!-- section gallery -->
-    <section>
+    <section id="sect_portfolio">
         <h2>galerie de portfolio</h2>
         <!-- 6 projets realiser par OVO-->
         <div class="projects">
@@ -105,7 +105,7 @@
         </div>
         
     </section>
-
+    <hr>
     <!-- entreprises partenaires -->
     <section id="reference">
         <h2>nos références</h2>
@@ -128,6 +128,7 @@
             <figure class="logoRef">
                 <img src="../image/logo-xclusif.png" alt="logo x-clusif">
             </figure>
+            
         </div>
     </section>
     <!-- footer -->
@@ -149,4 +150,5 @@
         </div>
     </footer>
 </body>
+<script src="./script.js"></script>
 </html>
