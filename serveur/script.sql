@@ -1,11 +1,13 @@
-CREATE TABLE `projet` (
+--
+-- Structure de la table `project`
+--
+
+CREATE TABLE `project` (
   `id` int(11) NOT NULL,
-  `nom` varchar(150) NOT NULL,
-  `suivis` int(150) NOT NULL,
+  `nom` varchar(155) NOT NULL,
+  `suivis` varchar(255) NOT NULL,
   `id_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
 
 --
 -- Structure de la table `user`
@@ -13,39 +15,32 @@ CREATE TABLE `projet` (
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `nom` varchar(50) NOT NULL,
-  `prenom` varchar(50) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `telephone` int(10) NOT NULL,
-  `id_projet` int(11) NOT NULL
+  `nom` varchar(155) NOT NULL,
+  `prenom` varchar(155) NOT NULL,
+  `email` varchar(155) NOT NULL,
+  `pass` varchar(155) NOT NULL,
+  `role` int(11) NOT NULL,
+  `id_project` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Index pour les tables déchargées
+-- Index pour la table `project`
 --
-
---
--- Index pour la table `projet`
---
-ALTER TABLE `projet`
+ALTER TABLE `project`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `id_user` (`id_user`);
+  ADD UNIQUE KEY `id_user` (`id_user`);
 
 --
 -- Index pour la table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `id_projet` (`id_projet`);
+  ADD UNIQUE KEY `id_project` (`id_project`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- AUTO_INCREMENT pour la table `project`
 --
-
---
--- AUTO_INCREMENT pour la table `projet`
---
-ALTER TABLE `projet`
+ALTER TABLE `project`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -55,17 +50,13 @@ ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Contraintes pour les tables déchargées
+-- Contraintes pour la table `project`
 --
-
---
--- Contraintes pour la table `projet`
---
-ALTER TABLE `projet`
-  ADD CONSTRAINT `projet_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`);
+ALTER TABLE `project`
+  ADD CONSTRAINT `project_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`);
 
 --
 -- Contraintes pour la table `user`
 --
 ALTER TABLE `user`
-  ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_projet`) REFERENCES `projet` (`id`);
+  ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_project`) REFERENCES `project` (`id`);

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte</title>
+    <!-- pour avoir les icones font awesomes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../image/ovo_logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- menu hamburger -->
+        <div class="con">
+            <input type="checkbox" id="check" data-valeur="change">
+            <label for="check">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <nav>
+            <!-- menu desktop normal -->
+            <ul id="nav">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./expertise.html">Expertise</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+        <figure>
+            <a href="../index.html"><img src="../image/ovo_logo.png" alt="ovo_logo"></a>
+        </figure>
+        <div id="btnHead">
+            <button><a href="./html/inscription.html">S'inscrire</a></button>
+            <button><a href="./html/connexion.html">Connexion </a></button>
+        </div>
+        
+    </header>
+    <!-- section banniere bienvenue id: baniereBvn-->
+    <section id="baniereBvn">
+        <h1>Bienvenue users</h1>
+    </section>
+
+    <!-- section profil -->
+    <section id="profil">
+        <h2>Mon Profil</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Modifier mon profil</legend>
+                <legend>S'inscrire chez ovo</legend>
+                <label for="fname">Prénom</label>
+                <input type="text" id="fname" name="firstname" placeholder="Votre prénom" required>
+
+                <label for="lname">Prénom</label>
+                <input type="text" id="lname" name="lastname" placeholder="Votre nom" required>
+            
+                <label for="mail"></label>
+                <input type="email" name="email" id="mail" placeholder="Votre mail" required>
+            
+                <label for="tel">Tel</label>
+                <input type="tel" name="telephone" id="tel" placeholder="06 95..." required>
+                <button type="submit">Modifier</button>
+            </fieldset>
+        </form>
+    </section>
+    <hr>
+    <!-- section suivi du projet -->
+    <section id="suivi">
+        <h2>Suivi du projet</h2>
+        <table>
+            <tr>
+              <th>Projets</th>
+              <th>Suivie</th>
+            </tr>
+            <tr>
+              <td>f</td>
+              <td>f</td>
+            </tr>
+            <tr>
+              <td>s</td>
+              <td>s</td>
+            </tr>
+            <tr>
+                <td>t</td>
+                <td>t</td>
+              </tr>
+          </table>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footList">
+            <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="copyr">
+            <p>&copy  2023. All rights reserved.</p>
+        </div>
+        <!-- reseau sociaux -->
+        <div class="rSoc">
+            <ul>
+                <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/ovo-consulting-75/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="../script.js"></script>
+</html>
