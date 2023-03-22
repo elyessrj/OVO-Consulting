@@ -15,36 +15,37 @@
 <body>
     <!-- header -->
     <header>
+        <!-- menu hamburger -->
+        <div class="con">
+            <input type="checkbox" id="check" data-valeur="change">
+            <label for="check">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
         <nav>
             <!-- menu desktop normal -->
-            <ul>
+            <ul id="nav">
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="./portfolio.html">Portfolio</a></li>
                 <li><a href="./expertise.html">Expertise</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-            <!-- menu hamburger -->
-            <div class="con">
-                <input type="checkbox" id="check" data-valeur="change">
-                <label for="check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-        </nav>
 
+        </nav>
         <figure>
             <a href="../index.html"><img src="../image/ovo_logo.png" alt="ovo_logo"></a>
         </figure>
         <div id="btnHead">
-            <button><a href="./connexion.html">Connexion</a></button>
             <button><a href="./inscription.html">S'inscrire</a></button>
+            <button><a href="./connexion.html">Connexion </a></button>
         </div>
+        
     </header>
     <!-- section gallery -->
-    <section>
+    <section id="sect_portfolio">
         <h2>galerie de portfolio</h2>
         <!-- 6 projets realiser par OVO-->
         <div class="projects">
@@ -105,7 +106,7 @@
         </div>
         
     </section>
-
+    <hr>
     <!-- entreprises partenaires -->
     <section id="reference">
         <h2>nos références</h2>
@@ -128,6 +129,7 @@
             <figure class="logoRef">
                 <img src="../image/logo-xclusif.png" alt="logo x-clusif">
             </figure>
+            
         </div>
     </section>
     <!-- footer -->
@@ -149,4 +151,5 @@
         </div>
     </footer>
 </body>
+<script src="../script.js"></script>
 </html>

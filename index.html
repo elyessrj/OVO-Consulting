@@ -12,25 +12,25 @@
 </head>
 <body>
     <header>
+        <!-- menu hamburger -->
+        <div class="con">
+            <input type="checkbox" id="check" data-valeur="change">
+            <label for="check">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
         <nav>
             <!-- menu desktop normal -->
-            <ul>
+            <ul id="nav">
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a href="./html/portfolio.html">Portfolio</a></li>
                 <li><a href="./html/expertise.html">Expertise</a></li>
                 <li><a href="./html/contact.html">Contact</a></li>
             </ul>
 
-            <!-- menu hamburger -->
-            <div class="con">
-                <input type="checkbox" id="check" data-valeur="change">
-                <label for="check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
         </nav>
         <figure>
             <a href="./index.html"><img src="./image/ovo_logo.png" alt="ovo_logo"></a>
@@ -38,8 +38,6 @@
         <div id="btnHead">
             <button><a href="./html/inscription.html">S'inscrire</a></button>
             <button><a href="./html/connexion.html">Connexion </a></button>
-            <i class="fa-solid fa-user"></i>
-
         </div>
         
     </header>
@@ -72,7 +70,9 @@
             <h5>Votre vision</h5>
             <h2>Solutions digitales pour votre business</h2>
             <p>La raison d'être d’OVO consulting est de fournir des conseils et un accompagnement aux entreprises et aux entrepreneurs souhaitant se lancer dans le développement de projets web. Nous intervenons à tous les stades du projet, de la conception à la mise en ligne.</p>
-            <button class="btnContact"><a href="./html/contact.html">NOUS CONTACTER</a></button>
+            <div>
+                <button class="btnContact"><a href="./html/contact.html">NOUS CONTACTER</a></button>
+            </div>
         </div>
     </section>
 
@@ -96,4 +96,5 @@
         </div>
     </footer>
 </body>
+<script src="./script.js"></script>
 </html>
