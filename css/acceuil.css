@@ -22,3 +22,42 @@
     width: 410px;
     padding-top: 10px;
 }
+
+/* responsive page acceuill */
+@media screen and (max-width:900px) {
+    #section1{
+        flex-direction: column;
+    }
+    #section2{
+        flex-direction: column-reverse;
+    }
+    #section1 img, #section2 img{
+        width: -webkit-fill-available;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    h2{
+        width: -webkit-fill-available;
+    }
+    .boxRight, .boxText {
+        width: -webkit-fill-available;
+        display: grid;
+        /* text-align: center; */
+    }
+    .boxRight p{
+        width: -webkit-fill-available;
+        margin-bottom: 15px;
+    }
+    .boxText{
+        width: 100%;
+
+    }
+    
+}
+@media screen and (max-width:600px) {
+    h1,h2{
+        font-size: 30px;
+
+    }
+}

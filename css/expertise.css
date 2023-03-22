@@ -2,6 +2,9 @@
 section:first-of-type{
     margin: 20px 0px;
 }
+#expertise h2{
+    text-align: center;
+}
 /* sect_expertCards est la box ou il ya tous les expertcards */
 #sect_expertCards{
     display: flex;
@@ -14,6 +17,12 @@ section:first-of-type{
     border: 1px solid #0d205333;
     border-radius: 5px;
     padding: 15px 10px;
+}
+.expertCard:hover{
+    box-shadow: -15px 50px 90px rgba(88, 103, 128, 0.253);
+    cursor: pointer;
+    border: transparent;
+    transition: all 0.2s ease-in-out;
 }
 .expertCard_img{
     text-align: center;
@@ -64,4 +73,22 @@ section:first-of-type{
 
 #sect_fonct img{
     width: 465px;
+}
+
+/* responsive expertise */
+@media screen and (max-width:1024px) {
+    .boxText h2 + p{
+        width: -webkit-fill-available;
+    }
+    /* section fonctionneement d'ovo */
+    #sect_fonct{
+        flex-direction: column;
+    }
+    #sect_fonct img{
+        width: -webkit-fill-available;
+
+    }
+    .expertCard{
+        margin-bottom: 20px;
+    }
 }
