@@ -25,57 +25,35 @@
         <nav>
             <!-- menu desktop normal -->
             <ul id="nav">
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./html/portfolio.html">Portfolio</a></li>
-                <li><a href="./html/expertise.html">Expertise</a></li>
-                <li><a href="./html/contact.html">Contact</a></li>
+                <li><a href="<?= URL.'accueil' ?>">Accueil</a></li>
+                <li><a href="<?= URL.'portfolio' ?>">Portfolio</a></li>
+                <li><a href="<?= URL.'expertise' ?>">Expertise</a></li>
+                <li><a href="<?= URL.'contact' ?>">Contact</a></li>
             </ul>
 
         </nav>
         <figure>
-            <a href="./index.html"><img src="./image/ovo_logo.png" alt="ovo_logo"></a>
+            <a href="<?= URL.'accueil' ?>"><img src="./image/ovo_logo.png" alt="ovo_logo"></a>
         </figure>
         <div id="btnHead">
-            <button><a href="./html/inscription.html">S'inscrire</a></button>
-            <button><a href="./html/connexion.html">Connexion </a></button>
+            <button><a href="<?= URL.'register' ?>">S'inscrire</a></button>
+            <button><a href="<?= URL.'login' ?>">Connexion </a></button>
         </div>
         
     </header>
-    <!--  -->
-    <section id="section1">
-        <div class="boxRight">
-            <!-- le h5 ici est le titre petit avec le gradient -->
-            <div>
-                <h5>Des Idées, Des Projets, Des Résultats !</h5>
+    <main>
+        <?php
+        if (isset($_SESSION['alert'])) :
+            ?>
+            <div class="alert alert-<?= $_SESSION['alert']['type'] ?>">
+                <?= $_SESSION['alert']['msg'] ?>
             </div>
-            <div >
-                <h1>Bring something big together !</h1>
-                <p>OVO Consulting est une société de conseil française qui se focalise notamment sur le conseil en ingénierie informatique, technologique et robotique.</p>
-            </div>
-            <div>
-                <button class="btnContact"><a href="./html/contact.html">NOUS CONTACTER</a></button>
-            </div>
-        </div>
-        <div class="boxLeft">
-            <img src="./image/Man-03.png" alt="mascotte_ovo">
-        </div>
-    </section>
-
-    <!-- section vision de l'entreprise -->
-    <section id="section2">
-        <div class="boxImage">
-            <img src="./image/Man-01.png" alt="mascote_ovo">
-        </div>
-        <div class="boxText">
-            <h5>Votre vision</h5>
-            <h2>Solutions digitales pour votre business</h2>
-            <p>La raison d'être d’OVO consulting est de fournir des conseils et un accompagnement aux entreprises et aux entrepreneurs souhaitant se lancer dans le développement de projets web. Nous intervenons à tous les stades du projet, de la conception à la mise en ligne.</p>
-            <div>
-                <button class="btnContact"><a href="./html/contact.html">NOUS CONTACTER</a></button>
-            </div>
-        </div>
-    </section>
-
+        <?php
+        endif;
+        unset($_SESSION['alert']);
+        ?>
+        <?= $content ?>
+    </main>
     <footer>
         <div class="footList">
             <ul>
