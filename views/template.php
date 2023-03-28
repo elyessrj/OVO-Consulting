@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="shortcut icon" href="./image/ovo_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
@@ -35,11 +36,23 @@
         <figure>
             <a href="<?= URL.'accueil' ?>"><img src="./image/ovo_logo.png" alt="ovo_logo"></a>
         </figure>
-        <div id="btnHead">
-            <button><a href="<?= URL.'register' ?>">S'inscrire</a></button>
-            <button><a href="<?= URL.'login' ?>">Connexion </a></button>
-        </div>
-        
+        <?php
+            if (isset($_SESSION['user'])) :
+          ?>
+            <div id="btnHead">
+                <button><a href="<?= URL.'account/profil' ?>">Mon Compte</a></button>
+                <button><a href="<?= URL.'account/logout' ?>">Déconnexion</a></button>
+            </div>
+          <?php
+            else:
+          ?>
+            <div id="btnHead">
+                <button><a href="<?= URL.'register' ?>">S'inscrire</a></button>
+                <button><a href="<?= URL.'login' ?>">Connexion </a></button>
+            </div>
+          <?php
+            endif;
+          ?>
     </header>
     <main>
         <?php
