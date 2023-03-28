@@ -13,10 +13,9 @@
                 <label for="mdp">Mot de passe</label>
                 <input type="password" name="mdp" id="mdp" placeholder="Entrer le mot de passe" required>
                 
-                <button type="submit" name="connexion">Connexion</button>
+                <button type="submit">Connexion</button>
             </fieldset>
         </form>
-
     </section>
 <?php
 $content=ob_get_clean();
