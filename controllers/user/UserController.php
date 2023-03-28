@@ -24,7 +24,8 @@ class UserController extends AbstractController {
 
     public function loginValidation(){
         $data = $this->checkData();
-        //var_dump($this->UserManager->getPasswordUser($data["mail"]));
+        var_dump($data);
+        // var_dump($this->UserManager->getPasswordUser($data["mail"]));
         $connexion = $this->UserManager->verifyPassword($data["mail"], $data['mdp']);
         if ($connexion){
             if ($this->UserManager->accountValid($data['mail'])){
@@ -41,6 +42,7 @@ class UserController extends AbstractController {
             }
         }else{
             DisplayController::messageAlert("Pas connecté, ERREUR", DisplayController::ROUGE);
+            var_dump($_SESSION);
             header("Location: ".URL."login");
             die();
         }
