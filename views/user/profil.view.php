@@ -1,16 +1,15 @@
 <?php
     ob_start();
 ?>
-</header>
     <!-- section banniere bienvenue id: baniereBvn-->
     <section id="baniereBvn">
-        <h1>Bienvenue users</h1>
+        <h1>Bienvenue <?= $data['prenom'] ?></h1>
     </section>
 
     <!-- section profil -->
     <section id="profil">
         <h2>Mon Profil</h2>
-        <form action="#" method="get">
+        <form action="<?= URL ?>registerValidation" method="POST">
             <fieldset>
                 <legend>Modifier mon profil</legend>
                 <legend>S'inscrire chez ovo</legend>
@@ -32,25 +31,27 @@
     <section id="suivi">
         <h2>Suivi du projet</h2>
         <table>
-            <tr>
-              <th>Projets</th>
-              <th>Suivie</th>
-            </tr>
-            <tr>
-              <td>f</td>
-              <td>f</td>
-            </tr>
-            <tr>
-              <td>s</td>
-              <td>s</td>
-            </tr>
-            <tr>
-                <td>t</td>
-                <td>t</td>
-              </tr>
+            <thead>
+                <th>Projets</th>
+                <th>Suivie</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>f</td>
+                    <td>f</td>
+                </tr>
+                <tr>
+                    <td>s</td>
+                    <td>s</td>
+                </tr>
+                <tr>
+                    <td>t</td>
+                    <td>t</td>
+                </tr>
+            </tbody>
           </table>
     </section>
-    <?php
+<?php
 $content=ob_get_clean();
 require_once "views/template.php";
 ?>
