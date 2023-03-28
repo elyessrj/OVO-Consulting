@@ -9,6 +9,7 @@ abstract class AbstractController{
         foreach ($_POST as $key=>$value){
             $valid=(isset($value) && !empty($value))?
                 htmlspecialchars($value) : null;
+            // var_dump($_POST);
             if ($valid==null){
                 throw new Exception("Données non validées");
             }
