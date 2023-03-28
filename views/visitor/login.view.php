@@ -2,9 +2,9 @@
     ob_start();
 ?>
     <!-- formulaire de connexion -->
-    <section id="formConnect" class="bottom">
+    <section id="formConnect">
         <h2>Connexion</h2>
-        <form action="<?= URL ?>loginValidation" method="POST" >
+        <form action="<?= URL ?>loginValidation" method="POST" id="bottom">
             <fieldset>
                 <legend>Votre espace client</legend>
                 <label for="mail" >Email de connexion :</label>

@@ -24,10 +24,12 @@ fieldset input{
     background-color: #f5f5f5c4;
 
 }
+/* partie connexion */
 #formConnect label{
     margin-top: 20px;
     width: -webkit-fill-available;
 }
+
 @media screen and (max-width:600px) {
     fieldset input{
         width: 70%;
