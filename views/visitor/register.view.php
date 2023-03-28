@@ -5,7 +5,7 @@
     
 <section id="formInscrip">
         <h2>Inscription</h2>
-        <form action="#" method="post">
+        <form action="<?= URL ?>registerValidation" method="POST">
             <fieldset>
                 <legend>S'inscrire chez ovo</legend>
                 <input type="text" id="fname" name="firstname" placeholder="Votre prénom" required>
@@ -14,8 +14,6 @@
             
                 <input type="email" name="email" id="mail" placeholder="Votre mail" required>
             
-                <input type="tel" name="telephone" id="tel" placeholder="Votre numero" required>
-
                 <input type="password" name="pass" id="pass" placeholder="Votre Mot" required>
             
                 <button type="submit">S'inscrire</button>
@@ -23,7 +21,7 @@
         </form>
     </section>
     <hr>
-    <section id="formConnect">
+    <!-- <section id="formConnect">
         <h2>Connexion</h2>
         <form action="#" method="post">
             <fieldset>
@@ -38,7 +36,7 @@
             </fieldset>
         </form>
 
-    </section>
+    </section> -->
 <?php
 $content=ob_get_clean();
 require_once "views/template.php";

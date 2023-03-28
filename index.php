@@ -24,13 +24,13 @@ require_once "controllers/SecurityController.php";
 $visitor= new VisitorController();
 $user= new UserController();
 
-try {
+
+try{
     if (empty($_GET["page"])){
         $visitor->home();
     }else{
         $url= explode("/", filter_var($_GET["page"], FILTER_SANITIZE_URL));
         switch ($url[0]){
-            // pages accessibles avec mots entre parenthése l'url
             case "accueil":
                 $visitor->home();
                 break;
@@ -46,22 +46,43 @@ try {
             case "register":
                 $visitor->register();
                 break;
+            case "registerValidation":
+                $user->registerValidation();
+                break;
             case "login":
                 $visitor->login();
                 break;
             case "loginValidation":
                 $user->loginValidation();
                 break;
-            // case "account":
-            //     if(!SecurityController::isLog()){
-            //         DisplayController::messageAlert("Il faut se connecter !", DisplayController::ROUGE);
-            //         header("Location: " . URL . "accueil");
-            //     }
+            case "account":
+                if(!SecurityController::isLog()){
+                    DisplayController::messageAlert("Il faut se connecter !", DisplayController::ROUGE);
+                    header("Location: " . URL . "accueil");
+                } else{
+                    switch ($url[1]){
+                        case "profil":
+                            $user->myProfil();
+                            break;
+                        case "logout":
+                            $user->logout();
+                            break;
+                        // case "addArticle":
+                        //     $article->addArticle();
+                        //     break;
+                        // case "addArticle":
+                        //     $article->addArticleValidation();
+                        //     break;
+                        }
+                    }
         }
+
     }
-}catch (Exception $e) {
-    $msg = $e->getMessage();
-    require_once "Views/error.view.php";
+
+}catch (Exception $e){
+    $msg=$e->getMessage();
+    require_once "views/error.view.php";
 }
+
 
 
