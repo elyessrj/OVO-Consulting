@@ -72,12 +72,12 @@ header img{
 #nav{
     display: flex;
 }
-#btnHead{
-    width: 200px;
+/* #btnHead{
+    width: 240px;
     display: flex;
     padding-top: 12px;
     justify-content: space-around;
-}
+} */
 
 /* footer desktop*/
 footer {
@@ -254,10 +254,10 @@ hr{
     }
 
     #btnHead{
-        width: 200px;
+        /* width: 240px; */
         display: none;
-        padding-top: 12px;
-        justify-content: space-around;
+        /* padding-top: 12px; */
+        /* justify-content: space-around; */
     }
 
     /* footer responsive */
