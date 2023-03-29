@@ -1,0 +1,6 @@
+#btnHead{
+    width: 240px;
+    display: flex;
+    padding-top: 12px;
+    justify-content: space-around;
+}
