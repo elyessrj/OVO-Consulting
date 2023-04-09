@@ -16,14 +16,14 @@
             </div>
         </div>
         <div class="boxLeft">
-            <img src="./image/Man-03.png" alt="mascotte_ovo">
+            <img src="public\assets\image\Man-03.png" alt="mascotte_ovo">
         </div>
     </section>
 
     <!-- section vision de l'entreprise -->
     <section id="section2">
         <div class="boxImage">
-            <img src="./image/Man-01.png" alt="mascote_ovo">
+            <img src="public\assets\image\Man-01.png" alt="mascote_ovo">
         </div>
         <div class="boxText">
             <h5>Votre vision</h5>

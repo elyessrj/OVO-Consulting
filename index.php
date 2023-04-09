@@ -67,12 +67,6 @@ try{
                         case "logout":
                             $user->logout();
                             break;
-                        // case "addArticle":
-                        //     $article->addArticle();
-                        //     break;
-                        // case "addArticle":
-                        //     $article->addArticleValidation();
-                        //     break;
                         }
                     }
         }

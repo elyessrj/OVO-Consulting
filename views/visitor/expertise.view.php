@@ -7,7 +7,7 @@
         <div id="sect_expertCards">
             <div class="expertCard">
                 <div class="expertCard_img">
-                    <img src="./image/Star.png" alt="etoile symbole de la creation">
+                    <img src="public\assets\image\Star.png" alt="etoile symbole de la creation">
                 </div>
                 <div class="expertCard_txt">
                     <h3>Création de site web</h3>
@@ -19,7 +19,7 @@
             </div>
             <div class="expertCard">
                 <div class="expertCard_img">
-                    <img src="./image/checked.png" alt="valider symbole de la creation de l'appli">
+                    <img src="public\assets\image\checked.png" alt="valider symbole de la creation de l'appli">
                 </div>
                 <div class="expertCard_txt">
                     <h3>Création d'app</h3>
@@ -31,7 +31,7 @@
             </div>
             <div class="expertCard">
                 <div class="expertCard_img">
-                    <img src="./image/Show.png" alt="valider symbole du seo">
+                    <img src="public\assets\image\Show.png" alt="valider symbole du seo">
                 </div>
                 <div class="expertCard_txt">
                     <h3>SEO & SEA</h3>
@@ -43,7 +43,7 @@
             </div>
             <div class="expertCard">
                 <div class="expertCard_img">
-                    <img src="./image/Lock.png" alt="la serrure symbole du branding">
+                    <img src="public\assets\image\Lock.png" alt="la serrure symbole du branding">
                 </div>
                 <div class="expertCard_txt">
                     <h3>Branding</h3>
@@ -59,7 +59,7 @@
     <!-- section fonctionnement -->
     <section id="sect_fonct">
         <div class="boxImage">
-            <img src="./image/Man-04.png" alt="mascotte au telephone">
+            <img src="public\assets\image\Man-04.png" alt="mascotte au telephone">
         </div>
         <div class="boxText">
             <h5>Notre Fonctionnement</h5>

@@ -1,7 +1,6 @@
 <?php
     ob_start();
 ?>
-</header>
     <!-- section banniere bienvenue id: baniereBvn-->
     <section id="baniereBvn">
         <h1>Bienvenue users</h1>
@@ -50,7 +49,8 @@
               </tr>
           </table>
     </section>
-    <?php
+    
+<?php
 $content=ob_get_clean();
 require_once "views/template.php";
 ?>

@@ -7,9 +7,8 @@
 
     <!-- pour avoir les icones font awesomes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="shortcut icon" href="./image/ovo_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="shortcut icon" href="./public/image/ovo_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
 </head>
 <body>
     <header>
@@ -34,7 +33,7 @@
 
         </nav>
         <figure>
-            <a href="<?= URL.'accueil' ?>"><img src="./image/ovo_logo.png" alt="ovo_logo"></a>
+            <a href="<?= URL.'accueil' ?>"><img src="./public/assets/image/ovo_logo.png" alt="ovo_logo"></a>
         </figure>
         <?php
             if (isset($_SESSION['user'])) :

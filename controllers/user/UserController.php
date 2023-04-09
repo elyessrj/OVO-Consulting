@@ -55,6 +55,7 @@ class UserController extends AbstractController {
 
     public function registerValidation(){
         $data= $this->checkData();
+        var_dump($data);
         $validation=$this->UserManager->addUser($data);
         if($validation){
             if ($this->UserManager->accountValid($data['mail'])){
